@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Nunito+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0a192f;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #041021;
+    font-family: 'Noto Sans Mono', monospace;
+    color: #64ffda;
+    padding: 0 2vw;
+}
+
+.nav-div-two{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-div-two a{
+    padding: 4px 8px;
+    text-decoration: none;
+    color: #64ffda;
+}
+
+.nav-div-two a:hover{
+    border: 2px dashed #64ffda;
+}
+
+.hamburger{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.bar:nth-child(1){
+    margin-bottom: 5px;
+    width: 50px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #64ffda;
+    transition: 0.2s;
+
+}
+.bar:nth-child(2){
+    margin-bottom: 5px;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #64ffda;
+}
+.bar:nth-child(3){
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #64ffda;
+    transition: 0.2s;
+
+}
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        display: none;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(4px) rotate(135deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-4px) rotate(-135deg);
+        width: 50px;
+    }
+
+    .nav-div-two{
+        padding-top: 40px;
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: #102b53;
+        height: 80vh;
+        top: 0;
+        right: -100%;
+        transition: 0.4s;
+    }
+
+    .nav-div-two.active{
+        position: fixed;
+        right: 0;
+    }
+}
