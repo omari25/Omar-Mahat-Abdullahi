@@ -131,7 +131,7 @@ nav{
     transition: 0.5s;
 }
 .contact-btn:hover{
-    background-color: #64ffdb74;
+    background-color: #64ffda;
     color: #0a192f;
     cursor: pointer;
     /* transition: 0.5s; */
@@ -146,19 +146,68 @@ nav{
 
 .about-div-two img{
     width: 80%;
-    /* border-radius: 50%; */
 }
+
+.contact-div{
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+.left-oriented-div{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 300px;
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+}
+.right-oriented-div{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 310px;
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.github-icon{
+    color: white;
+}
+.linkedin-icon{
+    color: #0e76a8;
+}
+.instagram-icon{
+    color: white;
+}
+.twitter-icon{
+    color: #00acee;
+}
+.right-oriented-div p{
+    font-family: 'Nunito Sans', sans-serif;
+    writing-mode: vertical-lr;
+}
+
+
+
+
+
+
+
+
 footer {
     color: white;
     text-align: center;
     font-family: 'Noto Sans Mono', monospace;
-
 }
-
-
-
-
-
 
 @media (max-width: 700px) {
     .main-section{
@@ -204,6 +253,10 @@ footer {
     .omar-mahat, .what-i-do {
         font-size: 30px;
     }
+
+    .right-oriented-div, .left-oriented-div{
+        display: none;
+    }
 }
 
 @media (max-width: 900px) {
@@ -215,6 +268,11 @@ footer {
         width: 100%;
     }
     .about-div-two img{
+        width: 100%;
+    }
+}
+@media (max-width: 260px) {
+    .contact-btn{
         width: 100%;
     }
 }
