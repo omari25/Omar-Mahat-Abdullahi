@@ -201,6 +201,9 @@ footer {
         position: fixed;
         right: 0;
     }
+    .omar-mahat, .what-i-do {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 900px) {
