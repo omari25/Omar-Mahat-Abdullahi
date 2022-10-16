@@ -5,7 +5,6 @@ navLink = document.querySelectorAll(".nav-link")
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active")
     navBar.classList.toggle("active")
-
 })
 
 navLink.forEach(link => {
