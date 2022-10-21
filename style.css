@@ -46,7 +46,7 @@ nav{
 }
 
 .hamburger{
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 30px;
     display: none;
@@ -149,10 +149,27 @@ nav{
 }
 
 .contact-div{
+    margin-top: 100px;
     width: 100%;
-    margin-top: 0px;
 }
 
+.contact-div h1{
+    margin: 0 10px;
+    color: #7d96bd;
+    font-size: 3vw;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.contact-div-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-div-one > div{
+    width: 10%;
+    height: 1px;
+    background-color: #18345d;
+}
 
 .left-oriented-div{
     position: fixed;
@@ -240,7 +257,7 @@ footer {
         justify-content: space-around;
         flex-direction: column;
         background-color: #102b53;
-        height: 80vh;
+        height: 100vh;
         top: 0;
         right: -100%;
         transition: 0.4s;
