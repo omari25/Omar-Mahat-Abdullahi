@@ -153,23 +153,35 @@ nav{
     width: 100%;
 }
 
-.contact-div h1{
+.contact-div-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-div-one h1{
     margin: 0 10px;
     color: #7d96bd;
     font-size: 3vw;
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.contact-div-one{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .contact-div-one > div{
     width: 10%;
     height: 1px;
     background-color: #18345d;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .left-oriented-div{
     position: fixed;
@@ -213,14 +225,8 @@ nav{
     writing-mode: vertical-lr;
 }
 
-
-
-
-
-
-
-
 footer {
+    margin-bottom: 16px;
     color: white;
     text-align: center;
     font-family: 'Noto Sans Mono', monospace;
@@ -257,7 +263,7 @@ footer {
         justify-content: space-around;
         flex-direction: column;
         background-color: #102b53;
-        height: 100vh;
+        height: 90vh;
         top: 0;
         right: -100%;
         transition: 0.4s;
@@ -273,6 +279,10 @@ footer {
 
     .right-oriented-div, .left-oriented-div{
         display: none;
+    }
+
+    .contact-div-one h1{
+        font-size: 24px;
     }
 }
 
