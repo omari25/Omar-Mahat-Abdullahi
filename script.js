@@ -9,8 +9,8 @@ hamburger.addEventListener("click", () => {
 })
 
 mainSection.addEventListener("click", () => {
-    hamburger.classList.toggle("active")
-    navBar.classList.toggle("active")
+    hamburger.classList.remove("active")
+    navBar.classList.remove("active")
 })
 
 navLink.forEach(link => {

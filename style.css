@@ -101,7 +101,7 @@ nav{
 }
 
 .omar-mahat{
-    color: white;
+    color: #7d96bd;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 5vw;
     font-weight: bold;
@@ -149,7 +149,7 @@ nav{
 }
 
 .contact-div{
-    margin-top: 100px;
+    margin-top: 80px;
     width: 100%;
 }
 
@@ -167,9 +167,26 @@ nav{
 }
 
 .contact-div-one > div{
-    width: 10%;
+    width: 20%;
     height: 1px;
     background-color: #18345d;
+}
+.contact-div-two{
+    font-family: 'Nunito Sans', sans-serif;
+    width: 60%;
+    margin: auto;
+    color: #7d96bd;
+}
+
+.contact-div-two-icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.contact-div-two-icons a {
+    font-size: 24px;
+    color: #7d96bd;
 }
 
 
@@ -193,36 +210,30 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    color: white;
     font-size: 24px;
+}
+
+.left-oriented-div a {
+    color: #7d96bd;
 }
 .right-oriented-div{
     position: fixed;
     right: 0;
     bottom: 0;
-    height: 310px;
+    height: 350px;
     width: 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    color: white;
 }
-.github-icon{
-    color: white;
-}
-.linkedin-icon{
-    color: #0e76a8;
-}
-.instagram-icon{
-    color: white;
-}
-.twitter-icon{
-    color: #00acee;
-}
+
 .right-oriented-div p{
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Noto Sans Mono', monospace;
     writing-mode: vertical-lr;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #7d96bd;
 }
 
 footer {
@@ -282,7 +293,16 @@ footer {
     }
 
     .contact-div-one h1{
-        font-size: 24px;
+        font-size: 28px;
+    }
+    .contact-div-two{
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) {
+    .contact-div-two-icons{
+        display: none;
     }
 }
 
