@@ -1,2 +1,2 @@
-# Author
-Omar Mahat Abdullahi
+# Welcome to my page!
+My Name is Omar Mahat Abdullahi

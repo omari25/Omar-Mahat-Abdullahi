@@ -45,52 +45,84 @@
                 <div></div>
             </div>
             <div class="skills-div-two">
-                <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'frontend')" id="defaultOpen">Front end</button>
-                    <button class="tablinks" onclick="openCity(event, 'Backend')">Back end</button>
-                    <button class="tablinks" onclick="openCity(event, 'Database')">Database</button>
-                    <button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
-                    <button class="tablinks" onclick="openCity(event, 'Tools')">Tools</button>
-                    <button class="tablinks" onclick="openCity(event, 'platforms')">Platforms</button>
+                <div class="tabs">
+                    <div class="tab" onclick="showTab(event, 'tab1')" id="defaultOpen">Front end</div>
+                    <div class="tab" onclick="showTab(event, 'tab2')">Back end</div>
+                    <div class="tab" onclick="showTab(event, 'tab3')">Database</div>
+                    <div class="tab" onclick="showTab(event, 'tab4')">Tools</div>
+                    <div class="tab" onclick="showTab(event, 'tab5')">Platforms</div>
                 </div>
-                <div class="tab-two">
-                    <div id="frontend" class="tabcontent">
-                        <div class="tabcontent-div">
-                            <div>
-                                <i class="fa-brands fa-html5"></i>
-                                <p style="font-size: 12px; font-weight: bold;">HTML5</p>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-css3"></i>
-                                <p style="font-size: 12px; font-weight: bold;">CSS3</p>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-square-js"></i>
-                                <p style="font-size: 12px; font-weight: bold;">JavaScript</p>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-react"></i>
-                                <p style="font-size: 12px; font-weight: bold;">Reactjs</p>
-                            </div>
+                <div class="tabs-two">
+                    <div id="tab1" class="tabcontent">
+                        <div>
+                            <img src="./images/html-5-svgrepo-com.png" alt="">
+                            <p>HTML5</p>
+                        </div>
+                        <div>
+                            <img src="./images/css-3-svgrepo-com.png" alt="">
+                            <p>CSS3</p>
+                        </div>
+                        <div>
+                            <img src="./images/javascript-svgrepo-com.png" alt="">
+                            <p>JavaScript</p>
+                        </div>
+                        <div>
+                            <img src="./images/reactjs-svgrepo-com.png" alt="">
+                            <p>Reactjs</p>
+                        </div>
+                        <div>
+                            <img src="./images/tailwindcss-icon-svgrepo-com.png" alt="">
+                            <p>Tailwindcss</p>
                         </div>
                     </div>
-                    <div id="Backend" class="tabcontent">
-                        <p>Back-end</p> 
+                
+                    <div id="tab2" class="tabcontent">
+                        <div>
+                            <img src="./images/ruby-svgrepo-com.png" alt="">
+                            <p>Ruby</p>
+                        </div>
+                        <div>
+                            <img src="./images/rails-svgrepo-com.png" alt="">
+                            <p>Rails</p>
+                        </div>
                     </div>
-                    <div id="Database" class="tabcontent">
-                        <p>Database</p> 
+                
+                    <div id="tab3" class="tabcontent">
+                        <div>
+                            <img src="./images/sqlite-svgrepo-com.png" alt="">
+                            <p>SqLite</p>
+                        </div>
+                        <div>
+                            <img src="./images/postgresql-svgrepo-com.png" alt="">
+                            <p>Postgresql</p>
+                        </div>
                     </div>
-                    <div id="Design" class="tabcontent">
-                        <p>Design</p>
+                    <div id="tab4" class="tabcontent">
+                        <div>
+                            <img src="./images/vs-code-svgrepo-com.png" alt="">
+                            <p>Visual studio</p>
+                        </div>
+                        <div>
+                            <img src="./images/postman-icon-svgrepo-com.png" alt="">
+                            <p>Postman</p>
+                        </div>
+                        <div>
+                            <img src="./images/git-svgrepo-com.png" alt="">
+                            <p>Git</p>
+                        </div>
+                        <div>
+                            <img src="./images/figma-svgrepo-com.png" alt="">
+                            <p>Figma</p>
+                        </div>
                     </div>
-                    <div id="Tools" class="tabcontent">
-                        <p>Tools</p>
-                    </div>
-                    <div id="platforms" class="tabcontent">
-                        <p>Platforms</p>
+                    <div id="tab5" class="tabcontent">
+                        <div>
+                            <img src="./images/heroku-icon-svgrepo-com.png" alt="">
+                            <p>Heroku</p>
+                        </div>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
 
         <div id="contact" class="contact-div">
