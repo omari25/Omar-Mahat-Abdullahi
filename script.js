@@ -29,14 +29,14 @@ function showTab(evt, tabName) {
     }
 
     let tabcontent = document.getElementsByClassName("tabcontent");
-        for (let i = 0; i < tabcontent.length; i++) {
+    for (let i = 0; i < tabcontent.length; i++) {
         tabcontent[i].classList.remove("active");
     }
 
     document.getElementById(tabName).classList.add("active");
 
     let tabs = document.getElementsByClassName("tab");
-        for (let i = 0; i < tabs.length; i++) {
+    for (let i = 0; i < tabs.length; i++) {
         tabs[i].classList.remove("active");
     }
 
